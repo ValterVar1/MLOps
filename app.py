@@ -107,7 +107,7 @@ class TrainModel(Resource):
                 }
             }
 
-            # Обновляем сетку параметров пользователями, если они предоставлены
+            # Update the params grid, if it exists
             if "param_grid" in data:
                 user_param_grid = data["param_grid"]
                 for param in user_param_grid:
